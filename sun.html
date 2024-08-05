@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color:black;
+            background-size:calc();
+        }
+        .solar{
+            height:100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items:center;
+        }
+        .sun{
+            height:200px;
+            width:200px;
+            background-color:yellow;
+            border-radius: 50%;
+            border: 1px solid orange;
+            box-shadow: 0px 0px 20px gold;
+
+        }
+        .circle{
+            border: 2px solid white;
+            height: 600px;
+            width:600px;
+            border-radius: 50%;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position:relative;
+            animation:rotateplanets 4s linear 0s infinite normal;
+        }
+        @keyframes rotateplanets {
+            from{
+
+            }
+            to{
+                transform:rotate(360deg);
+            }
+        }
+        .mercury{
+            border:2px solid white;
+            height:100px;
+            width:100px;
+            border-radius: 50%;
+            position:absolute; 
+            bottom: 550px;
+            background-color: red;
+
+        }
+        .circle2{
+            border:8px solid white;
+            height:900px;
+            width: 900px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            transform:skew(49deg,-4deg);
+        }
+        
+    </style>
+        
+</head>
+
+    <body>
+    <div class ="solar">
+        <div class ="circle2">
+            <div class ="circle">
+                <div class ="mercury"></div>
+                    <div class ="sun"></div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
